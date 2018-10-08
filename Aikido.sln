@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aikido", "Aikido\Aikido.csproj", "{D51A0708-FE55-49B6-B46D-40139CC28057}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{485EA35B-EE75-4BB7-8ED8-20618EEA7E6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aikido.Model", "Aikido.Model\Aikido.Model.csproj", "{F40024D1-8D14-4786-AB83-F1C9F6345F56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aikido.Repository", "Aikido.Repository\Aikido.Repository.csproj", "{43E2B54B-D29A-444E-9CB2-B2D65F05617E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,21 @@ Global
 		{D51A0708-FE55-49B6-B46D-40139CC28057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D51A0708-FE55-49B6-B46D-40139CC28057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D51A0708-FE55-49B6-B46D-40139CC28057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40024D1-8D14-4786-AB83-F1C9F6345F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40024D1-8D14-4786-AB83-F1C9F6345F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40024D1-8D14-4786-AB83-F1C9F6345F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40024D1-8D14-4786-AB83-F1C9F6345F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E2B54B-D29A-444E-9CB2-B2D65F05617E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E2B54B-D29A-444E-9CB2-B2D65F05617E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E2B54B-D29A-444E-9CB2-B2D65F05617E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E2B54B-D29A-444E-9CB2-B2D65F05617E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F40024D1-8D14-4786-AB83-F1C9F6345F56} = {485EA35B-EE75-4BB7-8ED8-20618EEA7E6D}
+		{43E2B54B-D29A-444E-9CB2-B2D65F05617E} = {485EA35B-EE75-4BB7-8ED8-20618EEA7E6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {023B4A09-4178-4068-87C6-5E792CE65946}

@@ -1,0 +1,71 @@
+﻿
+<div class="modal-header">
+    <h1 class="font-SourceSansPro-Bold">Dodaj Wydarzenie</h1>
+</div>
+
+<div class="modal-body">
+    <form name="form">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-3 text-right">Tytuł:</div> <div class="col-8"> <input type="text" ng-model="eventTitle" /></div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-3 text-right">Typ:</div>
+                <div class="col-8">
+                    <select data-ng-options="o.name for o in eventTypeOptions" data-ng-model="selectedEventType"></select>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-3 text-right">Start:</div>
+                <div class="col-7">
+                    <p class="input-group">
+                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="open1()">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-2">
+                <div class="col-3 text-right">Godzina Rozpoczęcia:</div>
+                <div class="col-7">
+                    <div uib-timepicker ng-model="startTime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-3 text-right">Koniec:</div>
+                <div class="col-7">
+                    <p class="input-group">
+                        <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dtEnd" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="open2()">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-2">
+                <div class="col-3 text-right">Godzina Zakońćzenia:</div>
+                <div class="col-7">
+                    <div uib-timepicker ng-model="endTime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></div>
+                </div>
+            </div>
+
+            <!--
+            <div class="row mb-2">
+                <div class="col-3 text-right mr-4">Cały dzień?</div><div class="col-7"><input type="checkbox" class="form-check-input" name="optradio" ng-model="allDay"></div>
+            </div>
+            -->
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-success" ng-disabled="false" ng-click="ok()"><i class="ace-icon fa fa-ok"></i> Ok</button>
+    <button class="btn btn-danger" ng-click="close()"><i class="fa fa-close"></i> Close</button>
+</div>
+
+<!--title: 'Birthday Party', start: new Date(y, m, d + 1, 19, 0), end: new Date(y, m, d + 1, 22, 30), allDay: false-->

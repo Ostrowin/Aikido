@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Aikido Ikeda Dojo</title>
+
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Content/fullcalendar.css" />
+    <link rel="stylesheet" type="text/css" href="App/Styles/mainStyle.css" />
+    <link rel="stylesheet" type="text/css" href="Content/font-awesome.min.css" />
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-touch.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="Scripts/moment.min.js"></script>
+    <script src="Scripts/fullcalendar.min.js"></script>
+    <script src="Scripts/gcal.min.js"></script>
+    <script src="Scripts/calendar.js"></script>
+
+    <script src="App/app.js"></script>
+    <script src="App/route.js"></script>
+
+    <script src="App/Cities/Torun/Trainings/TrainingsTorunController.js"></script>
+    <script src="App/Cities/Torun/Trainings/addEventsModalController.js"></script>
+
+</head>
+<body>
+    <div ng-include="'App/Shared/nav.html'"></div>
+    <div ng-view></div>
+</body>
+</html>
